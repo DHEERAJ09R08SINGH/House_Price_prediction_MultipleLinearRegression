@@ -7,8 +7,8 @@ import pickle
 application = Flask(__name__)   
 app = application
 
-regressor_model = pickle.load(open(r"models\regressor.pkl","rb"))
-standard_scaler = pickle.load(open(r"models\scaler.pkl","rb"))
+regressor_model = pickle.load(open("models/regressor.pkl","rb"))
+standard_scaler = pickle.load(open("models/scaler.pkl","rb"))
 
 
 ## Route for home page 
